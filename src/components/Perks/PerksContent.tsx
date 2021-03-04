@@ -38,12 +38,15 @@ function PerksContent({
                                 {v.title.map( (title, index) => (
                                     <PerksTitle 
                                         color={v.color}
+                                        colorful={colorful} 
                                         key={index}
                                     >
                                         {title}
                                     </PerksTitle>
                                 ))}
-                                <PerksDescription>
+                                <PerksDescription
+                                    colorful={colorful} 
+                                >
                                     {v.description}
                                 </PerksDescription>
                             </Col>
@@ -102,7 +105,7 @@ const PerksTitle = styled.div`
 `
 
 const PerksDescription = styled.div`
-    color: ${props => props.colorful ? props.color : 'black'};
+    color: ${props => props.colorful ? 'white' : 'black'};
     font-size: 1.8rem;
     margin-top: 2rem;
 `
