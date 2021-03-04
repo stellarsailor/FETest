@@ -82,7 +82,7 @@ function Payments({}: PaymentsProps){
                                 label="EXPIRY MONTH" 
                                 value={''} 
                                 halved
-                                selectArray={MonthsArray}
+                                selectArray={MonthsArray} //need to string -> parseInt
                             />
                             <SelectBox 
                                 label="EXPIRY YEAR" 

@@ -2,24 +2,24 @@ export type MonthType = Array<string>
 export type YearType = Array<number>
 
 export const MonthsArray: MonthType = [
-    'Jan',
-    'Feb',
-    'Mar',
-    'Apr',
-    'May',
-    'Jun',
-    'Jul',
-    'Aug',
-    'Sep',
-    'Oct',
-    'Nov',
-    'Dec',
+    '01',
+    '02',
+    '03',
+    '04',
+    '05',
+    '06',
+    '07',
+    '08',
+    '09',
+    '10',
+    '11',
+    '12',
 ]
 
 export const YearArray: YearType = [
-    2021, 
-    2022,
-    2023,
-    2024,
-    2025,
+    21, 
+    22,
+    23,
+    24,
+    25,
 ]
