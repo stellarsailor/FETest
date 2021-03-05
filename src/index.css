@@ -31,3 +31,7 @@ body {
   font-family: "Helvetica Neue";
   src: url('./assets/fonts/HelveticaNeue.ttf'),
 }
+
+a {
+  text-decoration: none;
+}
