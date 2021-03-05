@@ -21,11 +21,8 @@ function RoundedButton( {
 }: ButtonProps ){
 
     const hover = (e) => {
-        var x = e.pageX - e.target.offsetLeft;
-        var y = e.pageY - e.target.offsetTop;
-
-        e.target.style.setProperty('--x', x + 'px');
-        e.target.style.setProperty('--y', y + 'px');
+        e.target.style.setProperty('--x', e.nativeEvent.offsetX + 'px');
+        e.target.style.setProperty('--y', e.nativeEvent.offsetY+ 'px');
         // console.log(e.target.style.cssText)
     }
 
@@ -33,12 +30,13 @@ function RoundedButton( {
         <ButtonContainer
             width={width}
             height={height}
+            color={color}
             bgColor={bgColor}
             gradient={gradient}
             disabled={disabled}
             onMouseMove={(e) => hover(e)}
         >
-            <ButtonText color={color} >
+            <ButtonText>
                 {text}
             </ButtonText>
         </ButtonContainer>
@@ -52,6 +50,7 @@ const ButtonContainer = styled.div`
             appearance: none;
     width: ${props => props.width ? props.width : '15rem' };
     height: ${props => props.height ? props.height : '4rem' };
+    color: ${props => props.color ? props.color : 'white' };
     background: ${props => props.gradient 
         ? 'transparent linear-gradient(90deg, #1FE1E9 0%, #5E33D1 34%, #D34848 65%, #FFB33F 100%) 0% 0% no-repeat padding-box' 
         : props.bgColor 
@@ -64,6 +63,7 @@ const ButtonContainer = styled.div`
     align-items: center; 
     cursor: ${props => props.disabled ? 'auto' : 'pointer'};
     z-index: 10;
+    transition: .2s linear;
     &:before{
         --size: 0px;
         content: '';
@@ -78,7 +78,10 @@ const ButtonContainer = styled.div`
         transition: width .2s ease, height .2s ease;
     }
     &:hover:before{
-        --size: 300px;
+        --size: 400px;
+    }
+    &:hover{
+        color: white;
     }
 `
 
@@ -87,7 +90,6 @@ const ButtonText = styled.div`
     font-weight: bold;
     letter-spacing: 2.3px;
     pointer-events: none;
-    color: ${props => props.color ? props.color : 'white' };
     z-index: 20;
 `
 

@@ -3,7 +3,7 @@ $bg-color: #ffffff;
 [class*="btn-"] {
   outline:0;
   border-radius: 40px;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: bold;
   letter-spacing: 4px;
   overflow: hidden;
@@ -18,7 +18,7 @@ $bg-color: #ffffff;
     position: absolute;
   }
   &:hover, &:focus {
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.9);
   }
 }
 

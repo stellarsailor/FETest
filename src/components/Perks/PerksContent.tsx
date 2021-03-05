@@ -20,7 +20,8 @@ function PerksContent({
                 <Link to="/pricing">
                     <RoundedButton 
                         text="TRY IT NOW" 
-                        gradient
+                        color="var(--darkbg)"
+                        bgColor="white"
                     />
                 </Link>
             </ButtonContainer>
