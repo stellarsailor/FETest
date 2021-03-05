@@ -61,7 +61,7 @@ const Container = styled.div`
     height: 100vh;
     background-color: var(--darkbg);
     color: white;
-    padding-top: 5%;
+    padding-top: 8rem;
 `
 
 const ContentContainer = styled.div`

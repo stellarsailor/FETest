@@ -80,7 +80,7 @@ function Menu() {
                             animate={animateProps}
                             transition={{ delay: 0.6 }}
                         >
-                            <HoverLink to="/" hoverColor={colorReference[pager].hoverColor}>
+                            <HoverLink to="/?scroll=perks" hoverColor={colorReference[pager].hoverColor}>
                                 PERKS
                             </HoverLink>
                         </MenuTab>

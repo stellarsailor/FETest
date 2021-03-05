@@ -1,6 +1,7 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Row, Col } from 'react-grid-system';
 import styled from 'styled-components';
+import Menu from '../../components/Menu';
 import RadioInput from '../../components/Payments/RadioInput';
 import SelectBox from '../../components/Payments/SelectBox';
 import TextInput from '../../components/Payments/TextInput';
@@ -15,8 +16,13 @@ function Payments({}: PaymentsProps){
 
     const [ selectedType, setSelectedType ] = useState<number>(0)
 
+    useEffect(() => {
+        window.scrollTo(0, 0) //when route changed, go to top
+    },[])
+
     return (
         <Container>
+            <Menu />
             <ContentContainer>
                 <MainTitle>
                     PAYMENT

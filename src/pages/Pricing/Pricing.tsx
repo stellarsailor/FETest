@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import styled from 'styled-components';
+import Menu from '../../components/Menu';
 import PerksContent from "../../components/Perks/index"
 import PricingContent from "../../components/Pricing/index"
 
@@ -13,6 +14,7 @@ function Pricing({}: PricingProps){
 
     return (
         <>
+            <Menu />
             <PricingContent />
             <PerksContent />
         </>
