@@ -1,20 +1,20 @@
 import styled from 'styled-components';
 import { Row, Col } from 'react-grid-system';
-import LiquidGradientButton from '../RoundedButton';
-import Speakers from '../../assets/images/medium3.png'
+import RoundedButton from '../RoundedButton';
+import CursorImage from '../../assets/images/cursor-reveal.png';
 
 function Yellow(){
     return (
         <Container>
             <ButtonContainer>
-                <LiquidGradientButton 
+                <RoundedButton 
                 text="TRY IT NOW"
                 color="var(--yellow)"
                 />
             </ButtonContainer>
             <ContentContainer>
-                <Row nogutter justify="center" align="center" >
-                    <Col xs={4} sm={4} md={4} lg={4} xl={4} debug>
+                <Row nogutter justify="center" align="center">
+                    <Col xs={4} sm={4} md={4} lg={4} xl={4}>
                         <div style={{width: '100%', height: '60%'}} />
                     </Col>
                     <Col xs={8} sm={8} md={8} lg={8} xl={8}>
@@ -24,7 +24,7 @@ function Yellow(){
                         <SubText>
                             Experience concerts up close and personal.
                         </SubText>
-                        <LiquidGradientButton 
+                        <RoundedButton 
                             text="SEE DEMO"
                             color="var(--yellow)"
                         />
@@ -43,6 +43,7 @@ const Container = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    cursor: url(${CursorImage}), auto;
 `
 
 const ContentContainer = styled.div`
@@ -56,6 +57,7 @@ const ButtonContainer = styled.div`
 `
 
 const MainText = styled.div`
+    min-width: 600px;
     color: white;
     font-size: 3rem;
     font-weight: bold;

@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { Row, Col } from 'react-grid-system';
-import LiquidGradientButton from '../RoundedButton';
+import RoundedButton from '../RoundedButton';
 
 import Image1 from '../../assets/images/Image1.png'
 import Image2 from '../../assets/images/Image2.png'
@@ -41,7 +41,7 @@ function Hero() {
                                 before and from the comfort of your own home.
                             </Description>
                         </DescriptionContainer>
-                        <LiquidGradientButton 
+                        <RoundedButton 
                             text="TRY IT NOW"
                             gradient
                         />

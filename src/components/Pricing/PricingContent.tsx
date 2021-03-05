@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { Row, Col } from 'react-grid-system';
 import MusicalNote from '../../assets/svg/MusicalNote'
 import { PricingArray } from '../../data/Pricing'
-import LiquidGradientButton from '../RoundedButton';
+import RoundedButton from '../RoundedButton';
 
 function PricingContent({}){
 
@@ -44,7 +44,7 @@ function PricingContent({}){
                                 </PricingFeature>
                             ))}
                             <br />
-                            <LiquidGradientButton 
+                            <RoundedButton 
                                 text="SELECT"
                                 bgColor={v.color}
                             />

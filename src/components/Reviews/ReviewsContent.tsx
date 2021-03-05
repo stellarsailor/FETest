@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { Row, Col } from 'react-grid-system';
-import LiquidGradientButton from '../RoundedButton';
+import RoundedButton from '../RoundedButton';
 import Speakers from '../../assets/images/SmallSpeaker3.png'
 import { ReviewsArray } from '../../data/Reviews'
 
@@ -17,7 +17,7 @@ function ReviewsContent({
         <Container>
             <ButtonContainer>
                 {topRightButton &&                 
-                    <LiquidGradientButton 
+                    <RoundedButton 
                         text="TRY IT NOW"
                         color="var(--skyblue)"
                     />

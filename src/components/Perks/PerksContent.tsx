@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { Row, Col } from 'react-grid-system';
-import LiquidGradientButton from '../RoundedButton';
+import RoundedButton from '../RoundedButton';
 import { PerksArray } from '../../data/Perks'
 
 export type PerksContentProps = {
@@ -17,7 +17,7 @@ function PerksContent({
         <Container colorful={colorful}>
             <ButtonContainer>
                 {topRightButton && 
-                    <LiquidGradientButton 
+                    <RoundedButton 
                         text="TRY IT NOW" 
                         gradient
                     />

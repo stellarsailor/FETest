@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import LiquidGradientButton from '../RoundedButton';
+import RoundedButton from '../RoundedButton';
 
 function GetNow() {
 
@@ -14,7 +14,7 @@ function GetNow() {
                 </SubText>
             </TextContainer>
             <ButtonContainer>
-                <LiquidGradientButton 
+                <RoundedButton 
                     text="TRY IT NOW" 
                     gradient
                 />
