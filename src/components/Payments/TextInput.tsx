@@ -1,15 +1,18 @@
+import { Dispatch } from 'react';
 import styled from 'styled-components';
 
 type TextInputType = {
     label: string;
     value: string;
     halved?: boolean;
+    setValue?: any;
 }
 
 function TextInput({
     label,
     value,
     halved,
+    setValue,
 }: TextInputType) {
 
     return (
@@ -21,6 +24,7 @@ function TextInput({
                 type="text" 
                 value={value} 
                 halved={halved}
+                onChange={e => setValue(e.target.value)}
             />    
         </Container>
     )
