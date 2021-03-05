@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { Row, Col } from 'react-grid-system';
 import LiquidGradientButton from '../RoundedButton';
-import Speakers from '../../assets/images/medium3.png'
+import Player from '../Player'
 
 function Red(){
     return (
@@ -27,7 +27,8 @@ function Red(){
                         />
                     </Col>
                     <Col xs={4} sm={4} md={4} lg={4} xl={4}>
-                        <img src={Speakers} alt="speakers" width="100%" height="100%" />
+                        {/* <img src={Speakers} alt="speakers" width="100%" height="100%" /> */}
+                        <Player url="http://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Kangaroo_MusiQue_-_The_Neverwritten_Role_Playing_Game.mp3" />
                     </Col>
                 </Row>
             </ContentContainer>
