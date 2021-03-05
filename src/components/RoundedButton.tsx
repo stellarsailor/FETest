@@ -45,6 +45,7 @@ const ButtonContainer = styled.div`
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    z-index: 10;
 `
 
 const ButtonText = styled.div`

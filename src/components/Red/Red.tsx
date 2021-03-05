@@ -10,6 +10,7 @@ function Red(){
                 <RoundedButton 
                 text="TRY IT NOW"
                 color="var(--red)"
+                bgColor="white"
                 />
             </ButtonContainer>
             <ContentContainer>
@@ -24,6 +25,7 @@ function Red(){
                         <RoundedButton 
                             text="SEE DEMO"
                             color="var(--red)"
+                            bgColor="white"
                         />
                     </Col>
                     <Col xs={4} sm={4} md={4} lg={4} xl={4}>
