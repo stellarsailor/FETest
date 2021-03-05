@@ -7,6 +7,7 @@ type ButtonProps = {
     color?: string;
     bgColor?: string;
     gradient?: boolean;
+    disabled?: boolean;
 }
 
 function RoundedButton( {
@@ -16,6 +17,7 @@ function RoundedButton( {
     color,
     bgColor,
     gradient,
+    disabled,
 }: ButtonProps ){
 
     return (
@@ -24,6 +26,7 @@ function RoundedButton( {
             height={height}
             bgColor={bgColor}
             gradient={gradient}
+            disabled={disabled}
         >
             <ButtonText color={color}>
                 {text}
@@ -43,8 +46,8 @@ const ButtonContainer = styled.div`
     opacity: 1;
     display: flex;
     justify-content: center;
-    align-items: center;
-    cursor: pointer;
+    align-items: center; 
+    cursor: ${props => props.disabled ? 'auto' : 'pointer'};
     z-index: 10;
 `
 

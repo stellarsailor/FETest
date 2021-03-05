@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 import RoundedButton from '../RoundedButton';
 
 function GetNow() {
@@ -14,10 +15,12 @@ function GetNow() {
                 </SubText>
             </TextContainer>
             <ButtonContainer>
-                <RoundedButton 
-                    text="TRY IT NOW" 
-                    gradient
-                />
+                <Link to="/pricing">
+                    <RoundedButton 
+                        text="TRY IT NOW" 
+                        gradient
+                    />
+                </Link>
             </ButtonContainer>
         </Container>
     )

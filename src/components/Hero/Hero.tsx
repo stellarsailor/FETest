@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { Row, Col } from 'react-grid-system';
 import RoundedButton from '../RoundedButton';
@@ -41,10 +42,12 @@ function Hero() {
                                 before and from the comfort of your own home.
                             </Description>
                         </DescriptionContainer>
-                        <RoundedButton 
-                            text="TRY IT NOW"
-                            gradient
-                        />
+                        <Link to="/pricing">
+                            <RoundedButton 
+                                text="TRY IT NOW"
+                                gradient
+                            />
+                        </Link>
                     </MainTextContainer>
                 </Col>
             </Row>

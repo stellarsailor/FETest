@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 import { Row, Col } from 'react-grid-system';
 import MusicalNote from '../../assets/svg/MusicalNote'
 import { PricingArray } from '../../data/Pricing'
@@ -44,10 +45,12 @@ function PricingContent({}){
                                 </PricingFeature>
                             ))}
                             <br />
-                            <RoundedButton 
-                                text="SELECT"
-                                bgColor={v.color}
-                            />
+                            <Link to="/payments">
+                                <RoundedButton 
+                                    text="SELECT"
+                                    bgColor={v.color}
+                                />
+                            </Link>
                         </Col>
                     ))}
                 </Row>

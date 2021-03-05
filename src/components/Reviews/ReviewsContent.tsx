@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 import { Row, Col } from 'react-grid-system';
 import RoundedButton from '../RoundedButton';
 import Speakers from '../../assets/images/SmallSpeaker3.png'
@@ -16,12 +17,12 @@ function ReviewsContent({
     return (
         <Container>
             <ButtonContainer>
-                {topRightButton &&                 
+                <Link to="/pricing">
                     <RoundedButton 
-                        text="TRY IT NOW"
-                        color="var(--skyblue)"
+                        text="TRY IT NOW" 
+                        gradient
                     />
-                }
+                </Link>
             </ButtonContainer>
             <ContentContainer>
                 <SpeakerAndReviewsContainer>

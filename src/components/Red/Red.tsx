@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 import { Row, Col } from 'react-grid-system';
 import RoundedButton from '../RoundedButton';
 import Player from '../Player'
@@ -7,11 +8,13 @@ function Red(){
     return (
         <Container>
             <ButtonContainer>
-                <RoundedButton 
-                text="TRY IT NOW"
-                color="var(--red)"
-                bgColor="white"
-                />
+                <Link to="/pricing">
+                    <RoundedButton 
+                        text="TRY IT NOW"
+                        color="var(--red)"
+                        bgColor="white"
+                    />
+                </Link>
             </ButtonContainer>
             <ContentContainer>
                 <Row nogutter justify="center" align="center">

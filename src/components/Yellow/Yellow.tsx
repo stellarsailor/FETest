@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { Row, Col } from 'react-grid-system';
+import { Link } from 'react-router-dom';
 import RoundedButton from '../RoundedButton';
 import CursorImage from '../../assets/images/cursor-reveal.png';
 import Image from '../../assets/images/Image4.png'
@@ -10,11 +11,13 @@ function Yellow(){
         <Container Image={Image}>
             <MaskContainer Image={Mask} />
             <ButtonContainer>
-                <RoundedButton 
-                text="TRY IT NOW"
-                color="var(--yellow)"
-                bgColor="white"
-                />
+                <Link to="/pricing">
+                    <RoundedButton 
+                        text="TRY IT NOW"
+                        color="var(--yellow)"
+                        bgColor="white"
+                    />
+                </Link>
             </ButtonContainer>
             <ContentContainer>
                 <Row nogutter justify="center" align="center">
@@ -81,6 +84,7 @@ const ButtonContainer = styled.div`
     align-self: flex-end;
     margin-top: 4rem;
     margin-right: 4rem;
+    z-index: 10;
 `
 
 const MainText = styled.div`
