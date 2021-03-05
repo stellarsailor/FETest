@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import RoundedButton from '../RoundedButton';
+import RoundedButton from '../Button/RoundedButton';
 
 function GetNow() {
 

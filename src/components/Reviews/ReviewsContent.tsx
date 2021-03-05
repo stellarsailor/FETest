@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { Row, Col } from 'react-grid-system';
-import RoundedButton from '../RoundedButton';
+import RoundedButton from '../Button/RoundedButton';
 import Speakers from '../../assets/images/SmallSpeaker3.png'
 import { ReviewsArray } from '../../data/Reviews'
 

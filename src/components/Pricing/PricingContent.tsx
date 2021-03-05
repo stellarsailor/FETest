@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { Row, Col } from 'react-grid-system';
 import MusicalNote from '../../assets/svg/MusicalNote'
 import { PricingArray } from '../../data/Pricing'
-import RoundedButton from '../RoundedButton';
+import RoundedButton from '../Button/RoundedButton';
 
 function PricingContent({}){
 

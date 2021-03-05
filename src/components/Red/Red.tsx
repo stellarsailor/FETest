@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { Row, Col } from 'react-grid-system';
-import RoundedButton from '../RoundedButton';
-import Player from '../Player'
+import RoundedButton from '../Button/RoundedButton';
+import Player from '../Player/index'
 
 function Red(){
     return (

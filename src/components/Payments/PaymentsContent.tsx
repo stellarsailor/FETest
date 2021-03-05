@@ -5,7 +5,7 @@ import Menu from '../../components/Menu';
 import RadioInput from '../../components/Payments/RadioInput';
 import SelectBox from '../../components/Payments/SelectBox';
 import TextInput from '../../components/Payments/TextInput';
-import RoundedButton from '../../components/RoundedButton';
+import RoundedButton from '../Button/RoundedButton';
 import { CountriesArray } from '../../data/Countries';
 import { MonthsArray, YearArray } from '../../data/Date';
 import { PricingArray } from '../../data/Pricing'

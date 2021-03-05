@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { Row, Col } from 'react-grid-system';
 import { Link } from 'react-router-dom';
-import RoundedButton from '../RoundedButton';
+import RoundedButton from '../Button/RoundedButton';
 import CursorImage from '../../assets/images/cursor-reveal.png';
 import Image from '../../assets/images/Image4.png'
 import Mask from '../../assets/images/yellow-mask.png'

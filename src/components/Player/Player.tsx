@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import styled from 'styled-components';
-import Speakers from '../assets/images/medium3.png';
-import CursorImage from '../assets/images/cursor-click.png';
+import Speakers from '../../assets/images/medium3.png';
+import CursorImage from '../../assets/images/cursor-click.png';
 
 const useAudio = url => {
     const [ audio ] = useState(new Audio(url));
