@@ -1,6 +1,16 @@
+@font-face{
+  font-family: "HelveticaNeue-Bold";
+  src: local('HelveticaNeue-Bold'), url(./assets/fonts/HelveticaNeue-Bold.ttf) format('truetype'); 
+}
+
+@font-face{
+  font-family: "HelveticaNeue";
+  src: local('HelveticaNeue'), url(./assets/fonts/HelveticaNeue.ttf) format('truetype'); 
+}
+
 body {
   margin: 0;
-  font-family: 'Helvetica Neue', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'HelveticaNeue', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -20,16 +30,6 @@ body {
   --skyblue: #1FE1E9;
   --blue: #06c;
   --purple: #5E33D1;
-}
-
-@font-face{
-  font-family: "HelveticaNeue Bold";
-  src: url('./assets/fonts/HelveticaNeue-Bold.ttf'),
-}
-
-@font-face{
-  font-family: "Helvetica Neue";
-  src: url('./assets/fonts/HelveticaNeue.ttf'),
 }
 
 a {
