@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import RoundedButton from '../Button/RoundedButton';
+import GradientButton from '../Button/GradientButton';
 
 function GetNow() {
 
@@ -16,10 +17,7 @@ function GetNow() {
             </TextContainer>
             <ButtonContainer>
                 <Link to="/pricing">
-                    <RoundedButton 
-                        text="TRY IT NOW" 
-                        gradient
-                    />
+                    <GradientButton />
                 </Link>
             </ButtonContainer>
         </Container>

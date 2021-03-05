@@ -8,6 +8,7 @@ import Image1 from '../../assets/images/Image1.png'
 import Image2 from '../../assets/images/Image2.png'
 import Image3 from '../../assets/images/Image3.png'
 import HeroCircle from '../../assets/svg/HeroCircle';
+import GradientButton from '../Button/GradientButton';
 
 function Hero() {
 
@@ -43,10 +44,7 @@ function Hero() {
                             </Description>
                         </DescriptionContainer>
                         <Link to="/pricing">
-                            <RoundedButton 
-                                text="TRY IT NOW"
-                                gradient
-                            />
+                            <GradientButton />
                         </Link>
                     </MainTextContainer>
                 </Col>

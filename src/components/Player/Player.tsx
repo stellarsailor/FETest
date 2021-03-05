@@ -39,6 +39,6 @@ const Player = ({ url }) => {
 };
 
 const SpeakersImage = styled.img`
-    cursor: url(${CursorImage}), auto;
+    cursor: url(${CursorImage}) 45 45, auto;
 `
 export default Player;

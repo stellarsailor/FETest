@@ -32,12 +32,8 @@ function Main({}: MainProps){
             <Hero />
             <Red />
             <Yellow />
-            <PerksContent 
-                colorful
-                topRightButton
-            />
+            <PerksContent colorful />
             <ReviewsContent
-                topRightButton
             />
             <GetNow />
         </>

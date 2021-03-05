@@ -5,14 +5,9 @@ import RoundedButton from '../Button/RoundedButton';
 import Speakers from '../../assets/images/SmallSpeaker3.png'
 import { ReviewsArray } from '../../data/Reviews'
 
-export type ReviewsContentProps = {
-    topRightButton?: boolean;
-    colorful?: boolean;
-}
+export type ReviewsContentProps = {}
 
-function ReviewsContent({
-    topRightButton
-}: ReviewsContentProps){
+function ReviewsContent({}: ReviewsContentProps){
 
     return (
         <Container>
@@ -20,7 +15,8 @@ function ReviewsContent({
                 <Link to="/pricing">
                     <RoundedButton 
                         text="TRY IT NOW" 
-                        gradient
+                        color="var(--skyblue)"
+                        bgColor="white"
                     />
                 </Link>
             </ButtonContainer>

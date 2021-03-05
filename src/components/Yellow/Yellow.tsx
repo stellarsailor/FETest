@@ -52,9 +52,7 @@ const Container = styled.div`
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
-    /* justify-content: center;
-    align-items: center; */
-    cursor: url(${CursorImage}), auto;
+    cursor: url(${CursorImage}) 45 45, auto;
     z-index: 0;
 `
 
