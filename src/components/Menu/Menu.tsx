@@ -58,7 +58,7 @@ function Menu() {
                 <motion.nav
                     initial={{scale: 0, x: -50, y: -80}}
                     animate={{scale: 1}}
-                    transition={{duration: 1, ease: 'easeInOut'}}
+                    transition={{duration: 0.6, ease: 'easeInOut'}}
                     exit={{scale: 0}}
                 >
                     <Circle 
@@ -69,7 +69,7 @@ function Menu() {
                         <MenuTab
                             initial={initialProps}
                             animate={animateProps}
-                            transition={{ delay: 0.8 }}
+                            transition={{ delay: 0.4 }}
                         >
                             <HoverLink to="/" hoverColor={colorReference[pager].hoverColor}>
                                 WHAT IS IT
@@ -78,7 +78,7 @@ function Menu() {
                         <MenuTab
                             initial={initialProps}
                             animate={animateProps}
-                            transition={{ delay: 1 }}
+                            transition={{ delay: 0.6 }}
                         >
                             <HoverLink to="/" hoverColor={colorReference[pager].hoverColor}>
                                 PERKS
@@ -87,7 +87,7 @@ function Menu() {
                         <MenuTab
                             initial={initialProps}
                             animate={animateProps}
-                            transition={{ delay: 1.2 }}
+                            transition={{ delay: 0.8 }}
                         >
                             <HoverLink to="/pricing" hoverColor={colorReference[pager].hoverColor}>
                                 PRICING
