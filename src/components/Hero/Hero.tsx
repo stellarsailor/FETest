@@ -57,6 +57,7 @@ function Hero() {
                         selected={index === page}
                         size={16}
                         onClick={() => setPage(index)}
+                        key={index}
                     />
                 ))}
             </PageButtonContainer>

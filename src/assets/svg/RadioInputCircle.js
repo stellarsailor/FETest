@@ -8,7 +8,7 @@ function RadioInputCircle( props ){
     
     return (
         <svg width={size} height={size}>
-            <circle cx={size/2} cy={size/2} r={size/2 - 1} stroke={color === 'white' ? 'black' : color} stroke-width="1" fill={color} />
+            <circle cx={size/2} cy={size/2} r={size/2 - 1} stroke={color === 'white' ? 'black' : color} strokeWidth="1" fill={color} />
         </svg>
     )
 }

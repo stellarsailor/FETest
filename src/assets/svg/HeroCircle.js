@@ -9,7 +9,7 @@ function HeroCircle( props ){
     
     return (
         <svg width={size} height={size} style={{marginRight: '1rem', cursor: 'pointer'}} onClick={onClick}>
-            <circle cx={size/2} cy={size/2} r={size/2 - 1} stroke={'white'} stroke-width="1" fill={selected ? 'white' : 'rgba(0,0,0,0)' } />
+            <circle cx={size/2} cy={size/2} r={size/2 - 1} stroke={'white'} strokeWidth="1" fill={selected ? 'white' : 'rgba(0,0,0,0)' } />
         </svg>
     )
 }
