@@ -2,11 +2,10 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { Row, Col } from 'react-grid-system';
-import RoundedButton from '../Button/RoundedButton';
 
-import Image1 from '../../assets/images/Image1.png'
-import Image2 from '../../assets/images/Image2.png'
-import Image3 from '../../assets/images/Image3.png'
+import Image1 from '../../assets/images/Image1.png';
+import Image2 from '../../assets/images/Image2.png';
+import Image3 from '../../assets/images/Image3.png';
 import HeroCircle from '../../assets/svg/HeroCircle';
 import GradientButton from '../Button/GradientButton';
 

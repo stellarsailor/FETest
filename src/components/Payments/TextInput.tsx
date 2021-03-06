@@ -1,4 +1,3 @@
-import { Dispatch } from 'react';
 import styled from 'styled-components';
 
 type TextInputType = {

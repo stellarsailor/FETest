@@ -107,7 +107,7 @@ function Menu() {
 const Container = styled.div`
     margin: 4rem;
     position: fixed;
-    z-index: 10;
+    z-index: 50;
     display: flex;
     flex-direction: row;
     justify-content: center;

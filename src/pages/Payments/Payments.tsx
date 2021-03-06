@@ -1,5 +1,4 @@
-import { useEffect, useState } from 'react';
-import styled from 'styled-components';
+import { useEffect } from 'react';
 import PaymentsContent from '../../components/Payments/index'
 
 export type PaymentsProps = {}
